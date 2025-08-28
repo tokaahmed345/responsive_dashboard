@@ -17,7 +17,7 @@ This README showcases features, screenshots, and project setup.
 <div class="screens">
   <div>
     <h3>🖥️ Desktop</h3>
-    <img src="screenshots/desktop.png" alt="Desktop preview">
+    <img src="screenshots/desktop.png" alt="Desktop preview" width="200">
   </div>
   <div>
     <h3>📱 Tablet</h3>
