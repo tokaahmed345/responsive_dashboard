@@ -25,7 +25,7 @@ This README showcases features, screenshots, and project setup.
   </div>
   <div>
     <h3>📲 Mobile</h3>
-    <img src="android/screenshots/mobile.PNG" alt="Mobile preview">
+    <img src="android/screenshots/mobile.PNG" alt="Mobile preview"  width="200">
   </div>
 </div>
 
