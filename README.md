@@ -1,43 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
  
-  <style>
-    body {
-      font-family: "Segoe UI", Roboto, sans-serif;
-      background: #f7f9fc;
-      color: #333;
-      line-height: 1.6;
-      padding: 20px 40px;
-    }
-    h1, h2 {
-      color: #2b2d42;
-    }
-    pre {
-      background: #1e1e2f;
-      color: #d0e6ff;
-      padding: 12px;
-      border-radius: 6px;
-      overflow-x: auto;
-    }
-    img {
-      border-radius: 8px;
-      border: 1px solid #ddd;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .screens {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin: 20px 0;
-    }
-    .screens img {
-      width: 300px;
-    }
-    ul {margin-left: 20px;}
-    .contact a { color: #3b5bdb; text-decoration: none; }
-  </style>
-</head>
+  
 <body>
 
 <h1>📊 Responsive UI Dashboard</h1>
