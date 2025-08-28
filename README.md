@@ -17,11 +17,12 @@ This README showcases features, screenshots, and project setup.
 <div class="screens">
   <div>
     <h3>🖥️ Desktop</h3>
-    <img src="screenshots/desktop.png" alt="Desktop preview" width="300">
-  </div>
+   <img src="android/screenshots/mobile.PNG" alt="Mobile preview"  width="300">
+    <img src="android/screenshots/android.PNG" alt="Mobile preview"  width="300">
+    <img src="android/screenshots/mobile2.PNG" alt="Mobile preview"  width="300">  </div>
   <div>
     <h3>📱 Tablet</h3>
-    <img src="screenshots/tablet.png" alt="Tablet preview">
+   <img src="android/screenshots/tablet.PNG" alt="Mobile preview"  width="300">
   </div>
   <div>
     <h3>📲 Mobile</h3>
