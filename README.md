@@ -1,175 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Responsive UI Dashboard — README</title>
   <style>
     body {
-      margin: 0;
       font-family: "Segoe UI", Roboto, sans-serif;
-      background: #f5f7fa;
+      background: #f7f9fc;
       color: #333;
       line-height: 1.6;
-      padding: 40px 20px;
+      padding: 20px 40px;
     }
-    .container {
-      max-width: 1000px;
-      margin: auto;
+    h1, h2 {
+      color: #2b2d42;
     }
-    .card {
-      background: #fff;
-      border-radius: 16px;
-      padding: 30px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    }
-    h1 {
-      font-size: 32px;
-      margin: 0 0 10px;
-      color: #222;
-    }
-    .subtitle {
-      color: #555;
-      margin: 0 0 20px;
-    }
-    .kicker {
-      font-size: 13px;
-      display: inline-block;
-      background: #eef3ff;
-      color: #3b5bdb;
-      padding: 4px 10px;
-      border-radius: 999px;
-      margin-bottom: 10px;
-    }
-    .badges {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-    }
-    .badge {
-      font-size: 12px;
-      background: #f0f0f0;
-      color: #333;
-      border-radius: 8px;
-      padding: 6px 10px;
-    }
-    .grid {
-      display: grid;
-      gap: 20px;
-      grid-template-columns: 1fr;
-    }
-    @media(min-width:800px){
-      .grid {
-        grid-template-columns: 1.2fr 0.8fr;
-      }
-    }
-    h2 {
-      font-size: 22px;
-      margin: 20px 0 10px;
-      color: #111;
-    }
-    ul {padding-left: 20px;}
-    li {margin-bottom: 6px;}
-    .code {
+    pre {
       background: #1e1e2f;
       color: #d0e6ff;
-      padding: 14px;
-      border-radius: 10px;
-      font-family: monospace;
-      font-size: 14px;
+      padding: 12px;
+      border-radius: 6px;
       overflow-x: auto;
     }
-    .screens {
-      display: grid;
-      gap: 14px;
-      grid-template-columns: repeat(1, 1fr);
-      margin-top: 10px;
-    }
-    @media(min-width:600px){
-      .screens {grid-template-columns: repeat(3, 1fr);}
-    }
-    .shot {
-      border-radius: 12px;
-      overflow: hidden;
+    img {
+      border-radius: 8px;
       border: 1px solid #ddd;
-      background: #fafafa;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    .shot img {width: 100%; display: block;}
-    .footer {
-      margin-top: 20px;
-      font-size: 13px;
-      color: #666;
+    .screens {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 20px 0;
     }
+    .screens img {
+      width: 300px;
+    }
+    ul {margin-left: 20px;}
+    .contact a { color: #3b5bdb; text-decoration: none; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <div class="kicker">Flutter • Responsive</div>
-      <h1>Responsive UI Dashboard</h1>
-      <p class="subtitle">A modern, responsive admin dashboard built with <span style="color:#3b5bdb;">Flutter</span>. Optimized for desktop, tablet, and mobile. This HTML file acts as a visual README for your project.</p>
 
-      <div class="badges">
-        <span class="badge">Flutter 3.5+</span>
-        <span class="badge">Dart</span>
-        <span class="badge">fl_chart</span>
-        <span class="badge">flutter_svg</span>
-      </div>
+<h1>📊 Responsive UI Dashboard</h1>
 
-      <div class="grid">
-        <div>
-          <h2>✨ Features</h2>
-          <ul>
-            <li>Responsive layouts (desktop / tablet / mobile)</li>
-            <li>Charts & analytics using <code>fl_chart</code></li>
-            <li>SVG icons & illustrations with <code>flutter_svg</code></li>
-            <li>Reusable widgets and clean architecture</li>
-            <li>Device preview during development</li>
-          </ul>
+<p>
+Responsive Admin Dashboard built with <strong>Flutter</strong>, designed to work seamlessly on desktop 🖥️, tablet 📱, and mobile 📲.  
+This README showcases features, screenshots, and project setup.
+</p>
 
-          <h2>▶️ Getting Started</h2>
-          <p>Install dependencies and run the app:</p>
-          <div class="code">
-<pre>flutter pub get
-flutter run</pre>
-          </div>
+<hr>
 
-          <h2>📂 Structure</h2>
-          <div class="code">
-<pre>lib/
-├─ main.dart
-├─ responsive/        # breakpoints & layout helpers
-├─ utils/             # themes, constants, generated assets
-├─ widgets/           # reusable UI components
-└─ screens/           # dashboard pages</pre>
-          </div>
-        </div>
-
-        <div>
-          <h2>🎨 UI Preview</h2>
-          <div class="screens">
-            <div class="shot"><img src="assets/images/desktop.png" alt="Desktop preview"></div>
-            <div class="shot"><img src="assets/images/tablet.png" alt="Tablet preview"></div>
-            <div class="shot"><img src="assets/images/mobile.png" alt="Mobile preview"></div>
-          </div>
-          <p class="footer">Place screenshots in <code>assets/images/</code> folder.</p>
-        </div>
-      </div>
-
-      <h2>🧩 Packages</h2>
-      <ul>
-        <li><code>device_preview</code> — preview layouts on multiple devices</li>
-        <li><code>expandable_page_view</code> — flexible page views</li>
-        <li><code>fl_chart</code> — charts and graphs</li>
-        <li><code>flutter_svg</code> — SVG assets support</li>
-      </ul>
-
-      <h2>📜 License</h2>
-      <p>MIT — free for personal and commercial use.</p>
-      <p>© <span id="year"></span> Your Name</p>
-    </div>
+<h2>📸 Screenshots</h2>
+<div class="screens">
+  <div>
+    <h3>🖥️ Desktop</h3>
+    <img src="screenshots/desktop.png" alt="Desktop preview">
   </div>
+  <div>
+    <h3>📱 Tablet</h3>
+    <img src="screenshots/tablet.png" alt="Tablet preview">
+  </div>
+  <div>
+    <h3>📲 Mobile</h3>
+    <img src="screenshots/mobile.png" alt="Mobile preview">
+  </div>
+</div>
 
- 
+<hr>
+
+<h2>✨ Features</h2>
+<ul>
+  <li>Responsive layouts for all devices</li>
+  <li>Beautiful dashboard UI with charts and analytics</li>
+  <li>Navigation drawer and app bar design</li>
+  <li>Clean and reusable Flutter widgets</li>
+  <li>Supports dark/light themes</li>
+</ul>
+
+<hr>
+
+<h2>🛠️ Tech Stack</h2>
+<ul>
+  <li><strong>Flutter</strong> 3.x</li>
+  <li><strong>Dart</strong></li>
+  <li><strong>fl_chart</strong> for charts</li>
+  <li><strong>flutter_svg</strong> for icons</li>
+  <li><strong>Provider / Cubit</strong> for state management</li>
+</ul>
+
+<hr>
+
+<h2>📂 Project Structure</h2>
+<pre>
+lib/
+├── main.dart
+├── responsive/        # layout helpers & breakpoints
+├── utils/             # colors, themes, constants
+├── widgets/           # reusable UI components
+└── screens/           # dashboard pages
+</pre>
+
+<hr>
+
+<h2>🚀 Getting Started</h2>
+<ol>
+  <li>Clone the repo:
+    <pre>git clone https://github.com/yourusername/responsive_dashboard.git</pre>
+  </li>
+  <li>Install dependencies:
+    <pre>flutter pub get</pre>
+  </li>
+  <li>Run the app:
+    <pre>flutter run</pre>
+  </li>
+</ol>
+
+<hr>
+
+<h2>📊 Dashboard Demo</h2>
+<p>Example chart integration using <code>fl_chart</code>:</p>
+<img src="screenshots/chart.png" alt="Chart preview" width="500">
+
+<hr>
+
+<h2>📧 Contact</h2>
+<p class="contact">
+Made with ❤️ by <strong>Your Name</strong><br>
+<a href="https://github.com/yourusername">GitHub</a> |
+<a href="mailto:yourmail@example.com">Email</a>
+</p>
+
 </body>
 </html>
+
 
